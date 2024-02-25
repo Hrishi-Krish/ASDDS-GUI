@@ -110,8 +110,8 @@ main_frame.pack()
 main_frame.pack_propagate(False)
 main_frame.configure(width=800, height=900)
 
-gif_lb = CTkLabel(main_frame)
-gif_lb.pack(fill=BOTH)
+# gif_lb = CTkLabel(main_frame)
+# gif_lb.pack(fill=BOTH)
 
 # pages
 # -----
@@ -123,7 +123,7 @@ home_button = CTkButton(options_frame, text='Home',
                     command= lambda: indicate(home_button,home_indicator,home_page), width=232, height=40)
 home_button.place(x=10, y=20)
 
-home_indicator = CTkLabel(options_frame, text='', width=3, height=30, bg_color=('darkgrey', 'darkgrey'))
+home_indicator = CTkLabel(options_frame, text='', width=3, height=40, bg_color=('darkgrey', 'darkgrey'))
 home_indicator.place(x=2,y=20)
 
 # about page
@@ -133,7 +133,7 @@ about_button = CTkButton(options_frame, text='About',
                         command= lambda: indicate(about_button, about_indicator,about_page), width=232, height=40)
 about_button.place(x=10, y=80)
 
-about_indicator = CTkLabel(options_frame, text='', width=3, height=30, bg_color=('darkgrey', 'darkgrey'))
+about_indicator = CTkLabel(options_frame, text='', width=3, height=40, bg_color=('darkgrey', 'darkgrey'))
 about_indicator.place(x=2,y=80)
 
 # help page
@@ -143,7 +143,7 @@ help_button = CTkButton(options_frame, text='Help',
                     command= lambda: indicate(help_button, help_indicator,help_page), width=232, height=40)
 help_button.place(x=10, y=140)
 
-help_indicator = CTkLabel(options_frame, text='', width=3, height=30, bg_color=('darkgrey', 'darkgrey'))
+help_indicator = CTkLabel(options_frame, text='', width=3, height=40, bg_color=('darkgrey', 'darkgrey'))
 help_indicator.place(x=2,y=140)
 
 
